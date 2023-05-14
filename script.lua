@@ -3569,6 +3569,7 @@ local TotalFps = 0
 local CalFPS
 local WatermarkAvgFPS = 0
 local WatermarkPing = 0
+local Version = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ido1212/sisesbranch/main/version.txt"))()
 local WatermarkTitle = "sises"
 local MyExecutor = identifyexecutor()
 
@@ -3576,7 +3577,7 @@ Loop(1, function()
     WatermarkAvgFPS = math.random(-20,10) + WatermarkFPS
 
     if library.loaded then
-        Window.watermark:SetText(""..WatermarkTitle.." | Perms : Dev | Avg. FPS : "..WatermarkAvgFPS.." | Ping : "..WatermarkPing.."ms")
+        Window.watermark:SetText(""..WatermarkTitle.." "..Version.." | Perms : Dev | Avg. FPS : "..WatermarkAvgFPS.." | Ping : "..WatermarkPing.."ms")
     end
 
 WatermarkFPS = 0
