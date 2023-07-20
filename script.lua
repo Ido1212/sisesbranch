@@ -3569,7 +3569,7 @@ local TotalFps = 0
 local CalFPS
 local WatermarkAvgFPS = 0
 local WatermarkPing = 0
-local Version = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ido1212/sisesbranch/main/version.txt"))()
+local Version = "v1.0.1"
 local WatermarkTitle = "sises"
 local MyExecutor = identifyexecutor()
 
